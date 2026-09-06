@@ -472,7 +472,7 @@ Status: Registration Completed
 
         <div className="section-heading">
 
-          <div className="section-icon">
+          <div className="section-icon input-section-icon">
             ▧
           </div>
 
@@ -682,7 +682,7 @@ Status: Registration Completed
 
         <div className="section-heading">
 
-          <div className="section-icon">
+          <div className="section-icon status-section-icon">
             ◉
           </div>
 
@@ -1212,7 +1212,7 @@ Status: Registration Completed
 
   <div className="section-heading">
 
-    <div className="section-icon">
+    <div className="section-icon metrics-section-icon">
       ◌
     </div>
 
@@ -1258,7 +1258,7 @@ Status: Registration Completed
 
   <div className="section-heading">
 
-    <div className="section-icon">
+    <div className="section-icon downloads-section-icon">
       ⇩
     </div>
 

@@ -75,6 +75,10 @@
   text-shadow:
     0 0 8px rgba(60, 180, 255, 0.85),
     0 0 18px rgba(30, 130, 255, 0.45);
+
+  position: relative;
+  top: -5px;
+  /* transform: rotate(-20deg); */
 }
 
 
@@ -219,6 +223,39 @@
 
   text-shadow:
     0 0 12px rgba(40, 170, 255, 0.8);
+
+  
+}
+.input-section-icon {
+  transform: translateY(-2px);
+}
+
+.input-section-icon {
+  position: relative;
+  top: -7px;
+}
+
+.status-section-icon {
+  position: relative;
+  top: -7px;
+}
+
+.metrics-section-icon {
+  position: relative;
+  top: -12px;
+  font-size: 35px;
+}
+
+.downloads-section-icon {
+  position: relative;
+  top: -6px;
+  font-size: 28px;
+}
+
+.about-section-icon {
+  position: relative;
+  top: -7px;
+  font-size: 28px;
 }
 
 

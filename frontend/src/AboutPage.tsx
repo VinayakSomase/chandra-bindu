@@ -7,7 +7,7 @@ function AboutPage() {
       <section className="glass-card about-page">
 
         <div className="section-heading">
-          <div className="section-icon">ⓘ</div>
+          <div className="section-icon about-section-icon">ⓘ</div>
 
           <div>
             <h2>ABOUT CHANDRA-BINDU</h2>
@@ -34,11 +34,11 @@ function AboutPage() {
 
           <div className="about-flow">
             <span>Different observations</span>
-            <b>↓</b>
+            
             <span>Different appearance</span>
-            <b>↓</b>
+            
             <span>Difficult correspondence</span>
-            <b>↓</b>
+            
             <span>Reliable registration</span>
           </div>
 
