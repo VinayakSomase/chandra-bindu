@@ -1,0 +1,25 @@
+venv/
+__pycache__/
+*.pyc
+
+# Large satellite image files
+*.img
+*.IMG
+*.xml
+
+# Raw/calibrated satellite data
+data/calibrated/
+data/raw/
+
+# Temporary downloaded datasets
+data/downloads/
+
+# Generated outputs
+outputs/*.tif
+outputs/*.img
+outputs/*.IMG
+
+# OS / IDE files
+.DS_Store
+Thumbs.db
+.vscode/
