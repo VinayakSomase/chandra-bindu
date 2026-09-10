@@ -2317,3 +2317,233 @@
 .status-section .status-list {
   margin-bottom: 0;
 }
+/* Development Preview Notification */
+.development-notice {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 9999;
+  width: 360px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+
+  background: rgba(8, 18, 35, 0.94);
+  border: 1px solid rgba(105, 198, 255, 0.45);
+  border-radius: 12px;
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.45),
+    0 0 18px rgba(60, 180, 255, 0.12);
+
+  backdrop-filter: blur(12px);
+  color: #eaf7ff;
+}
+
+.development-notice strong {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 14px;
+  color: #69c6ff;
+  letter-spacing: 0.3px;
+}
+
+.development-notice p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.55;
+  color: rgba(234, 247, 255, 0.78);
+}
+
+.development-notice button {
+  flex-shrink: 0;
+  border: none;
+  background: transparent;
+  color: rgba(234, 247, 255, 0.65);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+
+.development-notice button:hover {
+  color: #ffffff;
+}
+/* Development Preview Overlay */
+.development-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(2, 10, 20, 0.62);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  animation: developmentOverlayIn 0.25s ease-out;
+}
+
+/* Center Modal */
+.development-notice {
+  position: relative;
+  width: min(480px, 90vw);
+  padding: 34px 38px;
+
+  text-align: center;
+
+  background: rgba(5, 18, 35, 0.96);
+  border: 1px solid rgba(105, 198, 255, 0.5);
+  border-radius: 18px;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.65),
+    0 0 35px rgba(60, 180, 255, 0.14);
+
+  animation: developmentModalIn 0.3s ease-out;
+}
+
+/* Rocket */
+.development-notice-icon {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+/* Title */
+.development-notice h2 {
+  margin: 0;
+
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  color: #eaf7ff;
+}
+
+/* Preview Label */
+.development-notice-label {
+  display: inline-block;
+  margin-top: 7px;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #69c6ff;
+}
+
+/* Description */
+.development-notice p {
+  margin: 18px auto 0;
+  max-width: 390px;
+
+  font-size: 13px;
+  line-height: 1.65;
+  color: rgba(234, 247, 255, 0.78);
+}
+
+.development-notice p + p {
+  margin-top: 8px;
+}
+
+.development-notice p strong {
+  color: #69c6ff;
+}
+
+/* Close Button */
+.development-notice-close {
+  position: absolute;
+  top: 14px;
+  right: 17px;
+
+  border: none;
+  background: transparent;
+
+  color: rgba(234, 247, 255, 0.6);
+  font-size: 25px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.development-notice-close:hover {
+  color: #ffffff;
+}
+
+/* Enter Dashboard */
+.development-notice-continue {
+  margin-top: 24px;
+  padding: 11px 22px;
+
+  border: 1px solid rgba(105, 198, 255, 0.45);
+  border-radius: 8px;
+
+  background: rgba(20, 120, 190, 0.18);
+  color: #69c6ff;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.development-notice-continue:hover {
+  background: rgba(20, 120, 190, 0.3);
+  border-color: #69c6ff;
+  box-shadow: 0 0 15px rgba(60, 180, 255, 0.18);
+}
+
+/* Animations */
+@keyframes developmentOverlayIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes developmentModalIn {
+  from {
+    opacity: 0;
+    transform: scale(0.94) translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+/* Fix notification layout */
+.development-notice {
+  display: block;
+}
+
+/* Keep modal content vertically aligned */
+.development-notice h2,
+.development-notice-label,
+.development-notice p {
+  display: block;
+}
+
+/* Override old button styling */
+.development-notice .development-notice-continue {
+  display: inline-block;
+  flex-shrink: 0;
+  margin-top: 24px;
+  padding: 11px 22px;
+
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+
+  border: 1px solid rgba(105, 198, 255, 0.45);
+  border-radius: 8px;
+
+  background: rgba(20, 120, 190, 0.18);
+  color: #69c6ff;
+}

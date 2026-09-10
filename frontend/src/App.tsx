@@ -67,6 +67,7 @@ function App() {
  const [status, setStatus] = useState<RegistrationStatus>("idle");
 
   const [opacity, setOpacity] = useState(50);
+  const [showNotice, setShowNotice] = useState(true);
 
   /* =========================================================
      CORRESPONDENCE LINE POSITIONS
@@ -336,6 +337,35 @@ Status: Registration Completed
 };
   return (
     <div className="app">
+
+      {showNotice && (
+  <div className="development-overlay">
+    <div className="development-notice">
+
+      <div className="development-notice-icon">🚀</div>
+
+      <h2>CHANDRA-BINDU</h2>
+      <span className="development-notice-label">
+        SIH26166 • DEVELOPMENT PREVIEW
+      </span>
+
+      <p>
+       Frontend workflow demonstration for lunar image correspondence & registration.
+      </p>
+
+      <p>
+        <strong>Current demo:</strong> Demo uses representative data. Backend integration is in progress.
+      </p>
+
+      <button
+        className="development-notice-continue"
+        onClick={() => setShowNotice(false)}
+      >
+        ENTER DASHBOARD →
+      </button>
+    </div>
+  </div>
+)}
       {/* =====================================================
          HEADER
          ===================================================== */}
