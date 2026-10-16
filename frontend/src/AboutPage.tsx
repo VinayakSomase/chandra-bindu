@@ -87,7 +87,7 @@ function AboutPage() {
             <div>
               <span>OHRC</span>
               <strong>
-                High-resolution optical imaging
+                High-Resolution optical imaging
               </strong>
             </div>
 
